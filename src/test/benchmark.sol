@@ -17,9 +17,11 @@ contract ContractTest is DSTest {
 
     function testEBMP() public {
         string memory ebmp = EBMP.encode(img, 32, 32, 3);
+        emit log_uint(bytes(ebmp).length);
     }
 
     function testPixelations() public {
         string memory pixelation = renderer.tokenSVG(img_bytes);
+        emit log_uint(bytes(pixelation).length);
     }
 }
