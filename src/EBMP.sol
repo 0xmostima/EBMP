@@ -47,6 +47,7 @@ contract EBMP {
                 uint32(0) // the number of important colors used, or 0 when every color is important
             ); // total 40 bytes long
         bytes memory data = new bytes(width * height * channels);
+        // resharding
         for (uint256 r = 0; r < height; r++) {
             for (uint256 c = 0; c < width; c++) {
                 for (uint256 color = 0; color < channels; color++) {
