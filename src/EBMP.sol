@@ -3,7 +3,7 @@ pragma solidity 0.8.11;
 
 import {Base64} from "./Base64.sol";
 
-library EBMP {
+contract EBMP {
     function uint32ToLittleEndian(uint32 a) internal pure returns (uint32) {
         unchecked {
             uint32 b1 = (a >> 24) & 255;
@@ -19,7 +19,7 @@ library EBMP {
         uint32 width,
         uint32 height,
         uint32 channels
-    ) internal pure returns (string memory) {
+    ) public pure returns (string memory) {
         bytes memory BITMAPFILEHEADER =
             abi.encodePacked(
                 string("BM"),
