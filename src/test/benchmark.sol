@@ -7,7 +7,7 @@ import "src/EBMPnoReshard.sol";
 import "src/PixelationsRenderer.sol";
 import "src/Brotchain.sol";
 
-contract ContractTest is DSTest {
+contract BenchmarkTest is DSTest {
     uint8[] img;
     bytes r_img;
     bytes er_img;
