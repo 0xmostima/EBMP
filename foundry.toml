@@ -1,0 +1,21 @@
+[default]
+src = 'src'
+out = 'out'
+libs = ['node_modules']
+remappings = [
+    'ds-test/=lib/ds-test/src/',
+    'ds-test/=lib/ds-test/src/',
+]
+offline = false
+optimizer = true
+optimizer_runs = 2000
+
+[default.optimizer_details]
+constantOptimizer = true
+yul = true
+# this sets the `yulDetails` of the `optimizer_details` for the `default` profile
+[default.optimizer_details.yulDetails]
+stackAllocation = true
+optimizerSteps = 'dhfoDgvulfnTUtnIf'
+
+# See more config options https://github.com/gakonst/foundry/tree/master/config
