@@ -1,0 +1,18 @@
+typechain-types
+node_modules
+yarn.lock
+
+node_modules
+.env
+coverage
+coverage.json
+typechain
+
+#Hardhat files
+cache
+artifacts
+
+*.jpg
+*.png
+*.html
+*.DS_Store

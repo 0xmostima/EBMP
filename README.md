@@ -14,6 +14,11 @@ Runtime analysis:
 cd src && time forge test -vv --match-test testEBMPSpeed
 ```
 
+We've also provided a demo to show how to use EBMP in hardhat. To run:
+```
+cd tool && yarn && npx hardhat compile && npx hardhat encode --image {YOUR_IMAGE} --width 64 --height 64 
+```
+
 ### Citing
 
 ```
