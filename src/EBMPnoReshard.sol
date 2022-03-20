@@ -43,7 +43,7 @@ contract EBMPnoReshard {
                 uint32(uint32ToLittleEndian(width * height * channels)), // the image size
                 uint32(0xc30e0000), // the horizontal resolution of the image
                 uint32(0xc30e0000), // the vertical resolution of the image
-                uint32(0), // the number of colors in the color palette, or 0 to default to 2n
+                uint32(0), // the number of colors in the color palette, or 0 to default to 2^n
                 uint32(0) // the number of important colors used, or 0 when every color is important
             ); // total 40 bytes long
         string memory encoded =
