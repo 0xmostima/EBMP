@@ -23,7 +23,7 @@ task("encode", "encode")
     const width = parseInt(taskArgs.width);
     const height = parseInt(taskArgs.height);
     const { data, _ } = await sharp(taskArgs.image)
-    .resize({ width, height })
+    .resize({ width, height, fit: 'fill' })
     .raw()
     .toBuffer({ resolveWithObject: true });
 
