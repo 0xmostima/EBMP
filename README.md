@@ -2,6 +2,8 @@
 
 Artifacts and experiments for EBMP: Efficient Bitmap Encodings on Ethereum Virtual Machines (SIGBOVIK '22) 
 
+http://sigbovik.org/2022/proceedings.pdf
+
 ### Running
 
 Benchmarks:
